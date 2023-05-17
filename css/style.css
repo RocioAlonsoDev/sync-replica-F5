@@ -1,0 +1,125 @@
+body{
+    background-color: #F6F9FD;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*header*/
+nav{
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    flex-flow: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #F6F9FD;
+    transition: height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+#logo{
+    width: 150px;
+    padding: 0;
+}
+
+#mainMenu{
+    width:100%;
+    flex-flow: row;
+    display: flex;
+    justify-content: end;
+}
+
+#mainMenu ul{
+    padding-top: 15px;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 700;
+}
+
+#dropdown button{
+    border: none;
+    background-color: #F6F9FD;
+    color: #333333;
+    font-weight: 700;
+}
+
+nav a:hover,#dropdown button:hover{
+    color: #FF4B63;
+}
+
+#dropdownMenu{
+    background-color: #F6F9FD;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    display: none;
+    min-width: 200px;
+    padding: 10px;
+}
+
+#dropdownMenu a{
+    display: block;
+    padding: 10px;
+}
+
+#dropdown:hover #dropdownMenu{
+    display: block;
+}
+
+button#download{
+    background-color: #F6F9FD;
+    border-radius: 50px;
+    border: 3px solid #FF4B63;
+    color: #FF4B63;
+    font-weight: 700;
+    padding: 5px 30px;
+}
+
+button#download:hover{
+    background-color: #FF4B63;
+    color: #F6F9FD;
+}
+
+#mobileMenuDropdown{
+    background-color: #F6F9FD;
+    color: #FF4B63;
+    border: #FF4B63 3px solid;
+    border-radius: 5px;
+    display: none;
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    button#download{
+        padding: 5px 10px;
+    }
+}
+@media only screen and (max-width:767px){
+    nav{
+        
+    }
+
+    #mobileMenuDropdown{
+        display: block;
+    }
+
+    #mainMenu ul{
+        position: absolute;
+        flex-flow:column wrap;
+        display: none;
+    }
+}
+
+
+
