@@ -24,13 +24,13 @@
     <header>
         <nav>
             <!--logo-->
-            <a href="index.html"><img src="img/logo.svg" alt="logo de la app 'sync'" id="logo"></a>
+            <a href="index.html"><img src="img/logo.svg" alt="Logo de la app 'Sync'." id="logo"></a>
             
             <div id="mainMenu">
                 <!--mobile menu button-->
                <button id="mobileMenuDropdown"><i class="fa-solid fa-bars"></i></button>
                 <!--desktop menu-->
-                <ul>
+                <ul id="options">
                     <li><a href="#">DESCRIPTION</a></li>
                     <li><a href="#">FEATURES</a></li>
                     <li><a href="#">SCREENS</a></li>
@@ -47,59 +47,109 @@
             </div>
         </nav>
     </header>
-    <main style="height:2000px;background-color: aqua;">
 
+    <main>
+        <section id="banner">
+            <h1 id="mainTitle">Mobile App Landing Page</h1>
+            <p>Start focusing on your goals and get more things done with Sync mobile application.
+                It's the first app to harness the power of social connections to help you stay focused
+                and get organized.
+            </p>
+            <div id="downloadButtons">
+                <button><i class="fa-brands fa-apple"></i> DOWNLOAD</button>
+                <button><i class="fa-solid fa-play"></i> DOWNLOAD</button>
+            </div>
+        </section>
+
+        <section id="mobilePhoneArt">
+            <img src="img/header-iphone.png" alt="Móvil con la App de Sync en pantalla.">
+        </section>
+
+        <section id="icons">
+            <div>
+                <div id="iconGoals">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <p>Identify Goals</p>
+            </div>
+            <div>
+                <div id="iconAnalysis">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <p>Situation Analysis</p>
+            </div>
+            <div>
+                <div id="iconTasks">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <p>Tasks Settings</p>
+            </div>
+            <div>
+                <div id="iconSocial">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </div>
+                <p>Social Interaction</p>
+            </div>
+            <div>
+                <div id="iconRocket">
+                    <i class="fa-solid fa-rocket"></i> 
+                </div>
+                <p>Get Things Done</p>
+            </div>
+        </section>
+
+        <section id="description">
+            <img src="img/description-1-app.png" alt="Vista de la galería de la aplicación.">
+            <article>
+                <h2>Organize Your Time And Start Getting Results</h2>
+                <p>
+                    Sync is the first mobile app on the market to harness the power of social 
+                    connections to help you stop procrastinating and strar getting things
+                    done. Give it a try and see the changes right away.
+                </p>
+                <ul>
+                    <li>Analyse and evaluate your current status and productivity</li>
+                    <li>Begin monitoring your day to day routine with Sync app</li>
+                    <li>See the improved results in no more than a couple weeks</li>
+                </ul>
+                <button>LIGHTBOX</button>
+            </article>
+        </section>
+
+        <section id="features">
+            <article>
+                <div class="featuresOptions">
+                    <button id="featuresOptActive"><i class="fa-regular fa-clock"></i> Schedule</button>
+                    <button><i class="fa-solid fa-list"></i> Tracking</button>
+                    <button><i class="fa-regular fa-calendar"></i> Organize</button>
+                </div>
+                <p>
+                    Schedule tasks to keep track of their completion. Sync procides multiple scheduling
+                    alarms and reminders.
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam dolorum
+                         porro perspiciatis, nam voluptate aut laudantium eum necessitatibus, obcaecati 
+                         mollitia amet est nesciunt labore minima. Molestias quasi cumque a?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam dolorum
+                         porro perspiciatis, nam voluptate aut laudantium eum necessitatibus, obcaecati 
+                         mollitia amet est nesciunt labore minima. Molestias quasi cumque a?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam dolorum
+                         porro perspiciatis, nam voluptate aut laudantium eum necessitatibus, obcaecati 
+                         mollitia amet est nesciunt labore minima. Molestias quasi cumque a?</li>
+                </ul>
+                <button></button>
+                <button></button>
+            </article>
+            <div id="featuresImgToggle">
+                <img src="img/description-2-app.png" alt="Horarios" id="schedule">
+                <img src="img/screenshot-3.jpg" alt="Registro de actividad" id="tracking">
+                <img src="img/screenshot-7.jpg" alt="Organización" id="organize">
+            </div>
+            
+        </section>
     </main>
 
-
-<!--
-    <header class="container-fluid">
-        <div class="row">
-
-            <div class="col-1"></div>
-
-            <nav class="navbar navbar-expand-lg col-10">
-                
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.svg" id="logo" alt="Sync App logo">
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">DESCRIPTION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FEATURES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SCREENS</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                EXTRA
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">ARTICLE DETAILS</a></li>
-                                <li><a class="dropdown-item" href="#">TERMS CONDITIONS</a></li>
-                                <li><a class="dropdown-item" href="#">PRIVACY POLICY</a></li>
-                            </ul>
-                        </li>
-                        <a href="hhtp://www.factoriaf5.com" class="btn" id="navbarDownloadBtn">DOWNLOAD</a>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="col-1"></div>
-
-        </div>
-    </header>
-
--->
 
 
     <main>

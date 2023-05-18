@@ -7,6 +7,7 @@ body{
 
 
 /*header*/
+
 nav{
     width: 100%;
     height: 130px;
@@ -18,6 +19,7 @@ nav{
     padding: 0 5%;
     background-color: #F6F9FD;
     transition: height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    z-index: 10;
 }
 
 #logo{
@@ -105,21 +107,270 @@ button#download:hover{
         padding: 5px 10px;
     }
 }
-@media only screen and (max-width:767px){
-    nav{
-        
-    }
 
+@media only screen and (max-width:767px){
     #mobileMenuDropdown{
         display: block;
     }
-
     #mainMenu ul{
+        background-color: #F6F9FD;
         position: absolute;
         flex-flow:column wrap;
         display: none;
     }
 }
 
+/*main*/
+main{
+    padding-top: 130px;
+    transition: padding-top 0.5s ease-in-out;
+    margin: 0;
+}
 
+/*banner*/
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    height: 70vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+}
+
+#mainTitle{
+   font-size: 6vw;
+   font-weight: 700;
+}
+
+#banner p{
+    max-width:800px;
+    padding: 2%;
+    font-weight: 500;
+    color: #6C6C6C;
+}
+
+
+
+#downloadButtons button{
+    color: #F6F9FD;
+    font-weight: 700;
+    background-color: #FF4B63;
+    border: #FF4B63 3px solid;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+#downloadButtons button:hover{
+    color: #FF4B63;
+    background-color: #F6F9FD;
+}
+
+
+/*móvil e iconos*/
+
+#mobilePhoneArt{
+    display: flex;
+    justify-content: center;
+}
+
+#mobilePhoneArt img{
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 10%;
+}
+
+#icons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top:100px
+}
+#icons div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#icons div div:hover{
+    animation: flipIcon 1s ease-in;
+}
+#icons div div{
+    border-radius: 50%;
+    width: 20vw;
+    max-width: 160px;
+    max-height: 160px;
+    height: 20vw;
+}
+#icons div i{
+    font-size: 10vw;
+}
+#icons div p{
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+#iconGoals{
+    background-color: #E8E3F9;
+    color: #A073E9;
+}
+#iconGoals:hover{
+    background-color: #A073E9;
+    color: #E8E3F9;
+}
+#iconAnalysis{
+    background-color: #D5F2ED;
+    color: #18C389;
+}
+#iconAnalysis:hover{
+    background-color: #18C389;
+    color: #D5F2ED;
+}
+#iconTasks{
+    background-color: #F7E1E7;
+    color: #FF4B63;
+}
+#iconTasks:hover{
+    background-color: #FF4B63;
+    color: #F7E1E7;
+}
+#iconSocial{
+    background-color: #F7EFD9;
+    color: #FFAA11;
+}
+#iconSocial:hover{
+    background-color: #FFAA11;
+    color: #F7EFD9;
+}
+#iconRocket{
+    background-color: #DDF0F9;
+    color: #46B0E5;
+}
+#iconRocket:hover{
+    background-color: #46B0E5;
+    color: #DDF0F9;
+}
+@keyframes flipIcon {
+    from {transform: rotateY(0)}
+    to {transform: rotateY(360deg)}
+  }
+
+@media only screen and (min-width:870px){
+    #icons div i{
+        font-size: 80px;
+    }
+}
+@media only screen and (min-width:1000px){
+    #mainTitle{
+        font-size: 70pt;
+    }
+    
+}
+
+/*description*/
+#description,#features{
+    margin-top: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 150px 10% 0 10%;
+}
+#description img{
+    width: 50%;
+}
+#description article{
+    width: 50%;
+    margin-top: 30px;
+}
+#description article h2{
+    font-weight: 700;
+    font-size: 3vw;
+    margin-bottom: 40px;
+}
+#description article p,#description article ul{
+    color: #6C6C6C;
+    line-height: 30px;
+    font-weight: 500;
+}
+#description article ul{
+    margin-bottom: 40px;
+    list-style-type: square;
+}
+#description article button{
+    color: #F6F9FD;
+    font-weight: 700;
+    background-color: #FF4B63;
+    border: #FF4B63 3px solid;
+    border-radius: 50px;
+    padding: 10px 50px;
+}
+#description article button:hover{
+    color: #FF4B63;
+    background-color: #F6F9FD;
+}
+
+
+@media only screen and (max-width:767px){
+    #description article h2{
+        font-size: 20pt;
+    }
+    #description img{
+        width: 100%;
+    }
+    #description article{
+        width: 100%;
+    }
+}
+
+/*features*/
+#features{
+    background-color: #E5EDF5;
+    width:100%
+}
+
+#features article,#features #featuresImgToggle{
+    width: 50%;
+}
+
+#features img{
+    width: 80%;
+}
+
+.featuresOptions button{
+    background-color: #F6F9FD;
+    font-weight: 700;
+    border: none;
+    color: #6C6C6C;
+    padding: 10px;
+    width: 150px;
+    margin: 5px;
+}
+
+.featuresOptions button:hover{
+    color: #8F5CE3;
+}
+
+#featuresOptActive{
+    background-color: #8F5CE3;
+    color: #F6F9FD;
+}
+
+#featuresOptions{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#features p{
+    margin: 5px;
+}
+
+#tracking,#organize{
+    display:none
+}
 
