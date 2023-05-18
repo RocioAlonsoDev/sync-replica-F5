@@ -54,26 +54,26 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
     background-color: #F6F9FD;
     transition: height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    z-index: 10;
+    z-index: 100;
 }
 
 #logo{
     width: 150px;
-    padding: 0;
+    margin: 0 0 0 5vw;
+    background-color: #F6F9FD;
 }
-
 #mainMenu{
-    width:100%;
+    width:80%;
     flex-flow: row;
     display: flex;
     justify-content: end;
+    margin: 0;
+    background-color: #F6F9FD;
 }
 
 #mainMenu ul{
-    padding-top: 15px;
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -81,6 +81,7 @@ nav{
     justify-content: flex-end;
     align-items: center;
     gap: 2%;
+    padding: 15px 5vw 0 0;
 }
 
 nav a{
@@ -138,6 +139,7 @@ button#download:hover{
     border: #FF4B63 3px solid;
     border-radius: 5px;
     display: none;
+    transform: translate(-30px,0);
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px){
@@ -151,10 +153,24 @@ button#download:hover{
         display: block;
     }
     #mainMenu ul{
-        background-color: #F6F9FD;
+        background-color: #E5EDF5;
         position: absolute;
         flex-flow:column wrap;
+        margin-top: 70px;
         display: none;
+        width: 100vw;
+        z-index: -1;
+    }
+    #dropdown button{
+        background-color: #E5EDF5;
+    }
+}
+@keyframes mobileMenuDropdown{
+    0%{
+        transform: translate(200vw, 0);
+    }
+    100%{
+        transform: translate(0px, 0px);
     }
 }
 
@@ -267,7 +283,7 @@ main{
 @keyframes flipIcon {
     from {transform: rotateY(0)}
     to {transform: rotateY(360deg)}
-  }
+}
 
 @media only screen and (min-width:870px){
     #icons div i{
@@ -283,7 +299,7 @@ main{
     }
     
 }
-
+ 
 /*description*/
 #description,#features{
     margin-top: 150px;
@@ -312,7 +328,6 @@ main{
     margin-bottom: 40px;
     list-style-type: square;
 }
-
 
 
 @media only screen and (max-width:767px){
@@ -535,7 +550,7 @@ hr{
 footer{
     border-top: #c7c7c7 0.5px solid;
     padding-top: 50px;
-    display:flex;
+    display: flex;
     flex-flow:row wrap;
     justify-content: space-evenly;
     color: #8E8E8E;
@@ -544,13 +559,22 @@ footer h3{
     font-weight: 700;
     font-size: 18px;
 }
-footer #socialMedia i{
-    background-color: #6C6C6C;
-    border-radius: 50%;
-    font-size: 20pt;
+footer #socialMedia{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+footer #socialMedia div{
     width: 50px;
     height: 50px;
-    padding: 10px 13px;
+    background-color: #6C6C6C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+footer #socialMedia div i{
+    font-size: 20pt;
     margin: 15px;
     color: #F6F9FD;
 }
