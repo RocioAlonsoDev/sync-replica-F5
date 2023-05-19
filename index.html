@@ -21,6 +21,7 @@
 
 
 <body>
+
     <header>
         <nav>
             <!--logo-->
@@ -31,9 +32,9 @@
                <button id="mobileMenuDropdown"><i class="fa-solid fa-bars"></i></button>
                 <!--desktop menu-->
                 <ul id="options">
-                    <li><a href="#">DESCRIPTION</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">SCREENS</a></li>
+                    <li><a href="#" class="menuOptions" id="linkDescription">DESCRIPTION</a></li>
+                    <li><a href="#" class="menuOptions" id="linkFeatures">FEATURES</a></li>
+                    <li><a href="#" class="menuOptions" id="linkScreens">SCREENS</a></li>
                     <div id="dropdown">
                         <button>EXTRA <i class="fa-solid fa-caret-down"></i></button>
                         <div id="dropdownMenu">
@@ -42,13 +43,21 @@
                             <a href="#">PRIVACY POLICY</a>
                         </div>
                     </div>
-                    <a href="https://factoriaf5.org/"><button id="download">DOWNLOAD</button></a>
+                    <a href="https://factoriaf5.org/" target="_blank"><button id="download">DOWNLOAD</button></a>
                 </ul> 
             </div>
         </nav>
     </header>
 
     <main>
+        <section id="decoration">
+            <img src="img/decorative-white-circle.svg" alt="Círculo blanco decorativo" id="whiteCircleRight">
+            <img src="img/decorative-white-circle.svg" alt="Círculo blanco decorativo" id="whiteCircleLeft">
+            <img src="img/decorative-blue-circle.svg" alt="Círculo azul decorativo" id="blueCircle">
+            <img src="img/decorative-green-diamond.svg" alt="Rombo verde decorativo" id="greenDiamond">
+            <img src="img/decorative-yellow-circle.svg" alt="Círculo amarillo decorativo" id="yellowCircle">
+        </section>
+
         <section id="banner">
             <h1 id="mainTitle">Mobile App Landing Page</h1>
             <p>Start focusing on your goals and get more things done with Sync mobile application.
@@ -56,8 +65,8 @@
                 and get organized.
             </p>
             <div>
-                <button class="buttons"><i class="fa-brands fa-apple"></i> DOWNLOAD</button>
-                <button class="buttons"><i class="fa-solid fa-play"></i> DOWNLOAD</button>
+                <a href="https://factoriaf5.org/" target="_blank"><button class="buttons"><i class="fa-brands fa-apple"></i> DOWNLOAD</button></a>
+                <a href="https://factoriaf5.org/" target="_blank"><button class="buttons"><i class="fa-solid fa-play"></i> DOWNLOAD</button></a>
             </div>
         </section>
 
@@ -112,7 +121,7 @@
                     <li>Begin monitoring your day to day routine with Sync app</li>
                     <li>See the improved results in no more than a couple weeks</li>
                 </ul>
-                <button class="buttons">LIGHTBOX</button>
+                <a href="https://factoriaf5.org/"  target="_blank"><button class="buttons">LIGHTBOX</button></a>
             </article>
         </section>
 
@@ -120,8 +129,8 @@
             <article>
                 <div class="featuresOptions">
                     <button id="featuresOptActive"><i class="fa-regular fa-clock"></i> Schedule</button>
-                    <button><i class="fa-solid fa-list"></i> Tracking</button>
-                    <button><i class="fa-regular fa-calendar"></i> Organize</button>
+                    <button id="trackingButton"><i class="fa-solid fa-list"></i> Tracking</button>
+                    <button id="organizeButton"><i class="fa-regular fa-calendar"></i> Organize</button>
                 </div>
                 <p>
                     <b>Schedule tasks</b> to keep track of their completion. Sync procides multiple scheduling
@@ -138,13 +147,11 @@
                          porro perspiciatis, nam voluptate aut laudantium eum necessitatibus, obcaecati 
                          mollitia amet est nesciunt labore minima. Molestias quasi cumque a?</li>
                 </ul>
-                <button class="buttons">TERMS</button>
-                <button class="buttonsAlternative">PRIVACY</button>
+                <a href="https://factoriaf5.org/" target="_blank"><button class="buttons">TERMS</button></a>
+                <a href="https://factoriaf5.org/" target="_blank"><button class="buttonsAlternative">PRIVACY</button></a>
             </article>
             <div id="featuresImgToggle">
                 <img src="img/description-2-app.png" alt="Horarios" id="schedule">
-                <img src="img/screenshot-3.jpg" alt="Registro de actividad" id="tracking">
-                <img src="img/screenshot-7.jpg" alt="Organización" id="organize">
             </div>
             
         </section>
@@ -272,8 +279,8 @@
                 personal development.
             </p>
             <div>
-                <button class="buttons"><i class="fa-brands fa-apple"></i> DOWNLOAD</button>
-                <button class="buttons"><i class="fa-solid fa-play"></i> DOWNLOAD</button>
+                <a href="https://factoriaf5.org/" target="_blank"><button class="buttons"><i class="fa-brands fa-apple"></i> DOWNLOAD</button></a>
+                <a href="https://factoriaf5.org/" target="_blank"><button class="buttons"><i class="fa-solid fa-play"></i> DOWNLOAD</button></a>
             </div>
         </section>
         
@@ -314,5 +321,6 @@
             <p>Copyright &copy; 2020 Inovatik - All rights reserved</p>
         </section>
     </footer>
+
 </body>
 </html>
