@@ -53,7 +53,10 @@ function scrollFunction() {
     linkFeatures.classList.remove('active')
     menuOptions[2].className += ' active';
   }else{
-    menuOptions.className.remove('active')
+    linkDescription.classList.remove('active')
+    linkFeatures.classList.remove('active')
+    linkScreens.classList.remove('active')
+
   }
 
 }
